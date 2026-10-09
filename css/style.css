@@ -511,13 +511,6 @@ h5 { font-weight: 600; font-size: 20px; line-height: 1.5; color: var(--dark-2); 
 .service h5 { color: #242424; }
 
 /* =========================================================
-   FEATURED (wide card)
-   ========================================================= */
-.featured { padding: 0 0 0; }
-.featured .container { padding: 10px; }
-.featured .card { margin-bottom: 0; }
-
-/* =========================================================
    FOOTER
    ========================================================= */
 .site-footer { background: #000; color: #fff; font-size: 15px; }
