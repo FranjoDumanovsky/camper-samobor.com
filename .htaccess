@@ -1,0 +1,77 @@
+# Camper Samobor — Apache config for shared hosting.
+# Croatian shared hosts run Apache + cPanel, so this file is read automatically.
+# If the host runs nginx instead, none of this applies — ask them for the equivalent.
+
+# UTF-8 by default, otherwise Croatian diacritics (č ć š ž đ) break on some hosts.
+AddDefaultCharset UTF-8
+
+# Serve the static homepage. Listed explicitly so a leftover WordPress index.php
+# in this folder can never take precedence over index.html.
+DirectoryIndex index.html
+
+# This site is the PRIMARY domain of the cPanel account, so this file sits in
+# public_html. Other sites on the account (addon domains) may have their document
+# root nested inside public_html, and mod_rewrite rules here would otherwise apply
+# to them. Every rule below is therefore gated on the camper-samobor.com hostname.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Requests for any other hostname: leave untouched.
+  RewriteCond %{HTTP_HOST} !^(www\.)?camper-samobor\.com$ [NC]
+  RewriteRule ^ - [L]
+
+  # Canonical host: www -> bare domain, always HTTPS.
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^(.*)$ https://camper-samobor.com/$1 [R=301,L]
+
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^(.*)$ https://camper-samobor.com/$1 [R=301,L]
+
+  # ---- Old WordPress URLs -> new static pages (301, keeps search rankings) ----
+
+  # English homepage and motorhomes
+  RewriteRule ^home/?$ /en/ [R=301,L]
+  RewriteRule ^pilote-en/?$ /en/pilote.html [R=301,L]
+  RewriteRule ^rimor-en/?$ /en/rimor.html [R=301,L]
+  RewriteRule ^ahor-en/?$ /en/ahorn.html [R=301,L]
+  RewriteRule ^ahorn-as-en/?$ /en/ahorn-as.html [R=301,L]
+  RewriteRule ^ahorn-ad-en/?$ /en/ahorn-ad.html [R=301,L]
+  RewriteRule ^benimar-tessoro-en/?$ /en/benimar-tessoro.html [R=301,L]
+
+  # Croatian motorhomes
+  RewriteRule ^(pilote|rimor|ahorn|ahorn-as|ahorn-ad|benimar-tessoro)/?$ /$1.html [R=301,L]
+
+  # WordPress pages and demo posts that have no static equivalent
+  RewriteRule ^(bavaria-en|hymer-carado-en)/?$ /en/ [R=301,L]
+  RewriteRule ^(bavaria|hymer-carado|kontakt|o-nama|pocetna-2)/?$ / [R=301,L]
+  RewriteRule ^(hello-world|demo-post|progress-always-involves-risk|believe-you-can-and-youre-halfway-there|the-best-investment-on-earth-is-earth|real-estate-cannot-be-lost-or-stolen-nor-can-it-be-carried-away|tough-times-dont-last-tough-people-do)/?$ / [R=301,L]
+  RewriteRule ^index\.php$ / [R=301,L]
+</IfModule>
+
+# Never serve project docs or dotfiles over HTTP.
+<FilesMatch "\.(md|sql|json|yml)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Images/fonts are content-stable; HTML must stay short so edits go live.
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html "access plus 10 minutes"
+</IfModule>
