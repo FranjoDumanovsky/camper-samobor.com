@@ -55,31 +55,14 @@ gh secret set CPANEL_TOKEN -R FranjoDumanovsky/camper-samobor.com
 
 ### 4. Create the cPanel clone
 
-The repo is **private** (unlike HostelSamobor/KombiRent), so cPanel cannot
-clone it anonymously. Give the server read-only access with a deploy key:
+The repo is public (like HostelSamobor/KombiRent), so cPanel clones it over
+HTTPS with no key. It holds no secrets: the cPanel token lives only in GitHub
+Actions secrets.
 
-1. cPanel → **SSH Access** → **Manage SSH Keys** → **Generate a New Key**
-   (no passphrase — cPanel Git cannot use one). Name it e.g. `github_camper`.
-   Then **View/Download** the *public* key and copy it.
-2. GitHub → repo **Settings → Deploy keys → Add deploy key**, paste it,
-   leave "Allow write access" **off**.
-3. cPanel uses `~/.ssh/id_rsa` (or `id_ed25519`) for GitHub by default. If you
-   named the key differently, add `~/.ssh/config` in File Manager:
-   ```
-   Host github.com
-     IdentityFile ~/.ssh/github_camper
-   ```
-4. cPanel → **Git™ Version Control** → **Create**:
-   - Clone URL: `git@github.com:FranjoDumanovsky/camper-samobor.com.git`
-   - Repository Path: `repositories/camper-samobor.com`
-   - Repository Name: `camper-samobor.com`
-
-If the clone fails with a host-key or connection error, the host is blocking
-outbound SSH (port 22) too. Fallback: a GitHub fine-grained token with
-**Contents: read-only** on this repo only, and clone
-`https://<token>@github.com/FranjoDumanovsky/camper-samobor.com.git` instead.
-The token then sits in the server clone's git config, so keep it read-only and
-scoped to this one repo.
+cPanel → **Git™ Version Control** → **Create**:
+- Clone URL: `https://github.com/FranjoDumanovsky/camper-samobor.com.git`
+- Repository Path: `repositories/camper-samobor.com`
+- Repository Name: `camper-samobor.com`
 
 Creating the clone does **not** deploy anything; only the workflow (or the
 "Deploy HEAD Commit" button) runs `.cpanel.yml`.
