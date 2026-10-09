@@ -109,11 +109,14 @@ h5 { font-weight: 600; font-size: 20px; line-height: 1.5; color: var(--dark-2); 
 /* =========================================================
    HEADER
    ========================================================= */
+/* Fixed, not sticky with a negative margin: the header overlays the hero at
+   whatever height the logo gives it, so no strip of page shows above the hero. */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  margin-bottom: -60px;
   background: transparent;
   transition: background-color 1s ease;
 }
