@@ -75,3 +75,15 @@ DirectoryIndex index.html
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType text/html "access plus 10 minutes"
 </IfModule>
+
+# Carried over verbatim from the WordPress-era public_html/.htaccess. The static
+# site needs no PHP, but AddHandler is inherited by subfolders, so any other site
+# nested in public_html keeps the same PHP version. If MultiPHP Manager changes
+# this domain's version, cPanel edits the live file; copy that change in here,
+# otherwise the next deploy reverts it.
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
