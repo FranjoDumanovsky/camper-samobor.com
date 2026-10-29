@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
   <title>NAJAM KAMPERA | POČETNA | camper-samobor.com</title>
   <meta name="description" content="Najam kampera u Samoboru – Pilote, Rimor, Ahorn i Benimar kamperi za najam.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&family=Questrial&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="preload" as="image" href="images/hero-mobile.webp" media="(max-width: 800px) and (orientation: portrait)" fetchpriority="high">
+  <link rel="preload" as="image" href="images/hero.webp" media="not all and (max-width: 800px) and (orientation: portrait)" fetchpriority="high">
+  <link rel="preload" href="fonts/poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body class="no-js">
 
@@ -34,7 +37,7 @@
 <header class="site-header" id="top">
   <div class="header-inner">
     <div class="h-col h-logo anim" data-anim="fadeInDown">
-      <a href="index.html" class="logo"><img src="images/logo.png" width="300" height="139" alt="Camper Samobor"></a>
+      <a href="index.html" class="logo"><img decoding="async" src="images/logo-w200.webp" width="300" height="139" alt="Camper Samobor"></a>
     </div>
 
     <div class="h-col h-nav anim" data-anim="fadeInDown" data-delay="200">
@@ -152,33 +155,33 @@
         <div class="col-33">
           <article class="card">
             <figure class="card-figure">
-              <img src="images/pilote.jpg" alt="Pilote P 696 S" loading="lazy">
+              <img decoding="async" src="images/pilote-w800.webp" srcset="images/pilote-w400.webp 400w, images/pilote-w800.webp 800w" sizes="(max-width: 767px) 90vw, 358px" width="800" height="466" alt="Pilote P 696 S" loading="lazy">
               <span class="badge">od 145 € na dan<small>Sidrena cijena na dan 10.09.2026.: od 145&nbsp;€ na dan</small></span>
             </figure>
             <div class="card-body">
               <h2 class="card-title">Pilote P 696 S</h2>
               <div class="card-text"><p>Inovacije i iskustvo, industrijski procesi i obrtničke metode, kreativnost i pouzdanost - sve ćete to pronaći na svom kamp kućici Pilote. Putujte mirno, idite dalje, budite slobodni: u dobrim ste rukama. Udobno će smjestiti 6 osoba u dnevni boravak sa svoja dva trpezarijska prostora.</p></div>
             </div>
-            <a class="card-btn" href="pilote.html">SAZNAJ VIŠE</a>
+            <a class="card-btn" href="pilote.html">SAZNAJ VIŠE<span class="sr-only"> – Pilote P 696 S</span></a>
           </article>
         </div>
         <div class="col-33">
           <article class="card">
             <figure class="card-figure">
-              <img src="images/rimor.jpg" alt="Rimor Seal 12 Plus" loading="lazy">
+              <img decoding="async" src="images/rimor-w800.webp" srcset="images/rimor-w400.webp 400w, images/rimor-w800.webp 800w" sizes="(max-width: 767px) 90vw, 358px" width="800" height="534" alt="Rimor Seal 12 Plus" loading="lazy">
               <span class="badge">od 145 € na dan<small>Sidrena cijena na dan 10.09.2026.: od 145&nbsp;€ na dan</small></span>
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rimor Seal 12 Plus</h2>
               <div class="card-text"><p>Svaki odlazak je avantura, svako putovanje, jedno otkrića. Učinite svijet lijepšim svojim novim domom uz Rimor. Više od 40 godina gradimo kampere i kombije, crpeći inspiraciju iz mjesta koja nam najviše znače, u kojima se osjećamo sigurno. </p></div>
             </div>
-            <a class="card-btn" href="rimor.html">SAZNAJ VIŠE</a>
+            <a class="card-btn" href="rimor.html">SAZNAJ VIŠE<span class="sr-only"> – Rimor Seal 12 Plus</span></a>
           </article>
         </div>
         <div class="col-33">
           <article class="card">
             <figure class="card-figure">
-              <img src="images/ahorn-eco.jpg" alt="Ahorn ECO 660" loading="lazy">
+              <img decoding="async" src="images/ahorn-eco-w800.webp" srcset="images/ahorn-eco-w400.webp 400w, images/ahorn-eco-w800.webp 800w" sizes="(max-width: 767px) 90vw, 358px" width="800" height="534" alt="Ahorn ECO 660" loading="lazy">
               <span class="badge">od 145 € na dan<small>Sidrena cijena na dan 10.09.2026.: od 145&nbsp;€ na dan</small></span>
             </figure>
             <div class="card-body">
@@ -187,7 +190,7 @@
  Na raspolaganju je šest sjedećih mjesta i šest ležajeva. Ovaj kamper spada u Eco seriju, koja je idealna za Vas kao mogućeg „pridošlicu“.
  Sva vozila iz serije su laka za rukovanje i iznimno robusna.</p></div>
             </div>
-            <a class="card-btn" href="ahorn.html">SAZNAJ VIŠE</a>
+            <a class="card-btn" href="ahorn.html">SAZNAJ VIŠE<span class="sr-only"> – Ahorn ECO 660</span></a>
           </article>
         </div>
       </div>
@@ -196,7 +199,7 @@
         <div class="col-33">
           <article class="card">
             <figure class="card-figure">
-              <img src="images/ahorn-canada-as.jpg" alt="Ahorn Canada AS" loading="lazy">
+              <img decoding="async" src="images/ahorn-canada-as-w800.webp" srcset="images/ahorn-canada-as-w400.webp 400w, images/ahorn-canada-as-w800.webp 800w" sizes="(max-width: 767px) 90vw, 358px" width="800" height="534" alt="Ahorn Canada AS" loading="lazy">
               <span class="badge">od 145 € na dan<small>Sidrena cijena na dan 10.09.2026.: od 145&nbsp;€ na dan</small></span>
             </figure>
             <div class="card-body">
@@ -206,13 +209,13 @@ djece ili cijelu grupu prijatelja. S do sedam ležajeva za spavanje,
 optimalnim rasporedom prostorija i konceptom prostranog dizajna, u Canada
 AS-u nikad nije tijesno.</p></div>
             </div>
-            <a class="card-btn" href="ahorn-as.html">SAZNAJ VIŠE</a>
+            <a class="card-btn" href="ahorn-as.html">SAZNAJ VIŠE<span class="sr-only"> – Ahorn Canada AS</span></a>
           </article>
         </div>
         <div class="col-33">
           <article class="card">
             <figure class="card-figure">
-              <img src="images/ahorn-canada-ad.jpg" alt="Ahorn Canada AD" loading="lazy">
+              <img decoding="async" src="images/ahorn-canada-ad-w800.webp" srcset="images/ahorn-canada-ad-w400.webp 400w, images/ahorn-canada-ad-w800.webp 800w" sizes="(max-width: 767px) 90vw, 358px" width="800" height="534" alt="Ahorn Canada AD" loading="lazy">
               <span class="badge">od 145 € na dan<small>Sidrena cijena na dan 10.09.2026.: od 145&nbsp;€ na dan</small></span>
             </figure>
             <div class="card-body">
@@ -222,13 +225,13 @@ radnim prostorom, brojnim ladicama i ormarićima za odlaganje kuhinjskog
 pribora, ova kuhinja je san za sve kuhare hobiste. Dizajniran je
 za šest osoba s prenamjenom kutije za objedovanje.</p></div>
             </div>
-            <a class="card-btn" href="ahorn-ad.html">SAZNAJ VIŠE</a>
+            <a class="card-btn" href="ahorn-ad.html">SAZNAJ VIŠE<span class="sr-only"> – Ahorn Canada AD</span></a>
           </article>
         </div>
         <div class="col-33">
           <article class="card">
             <figure class="card-figure">
-              <img src="images/benimar-tessoro.jpeg" alt="Benimar Tessoro" loading="lazy">
+              <img decoding="async" src="images/benimar-tessoro-w800.webp" srcset="images/benimar-tessoro-w400.webp 400w, images/benimar-tessoro-w800.webp 800w" sizes="(max-width: 767px) 90vw, 358px" width="800" height="441" alt="Benimar Tessoro" loading="lazy">
               <span class="badge">od 190 € na dan<small>Sidrena cijena na dan 10.09.2026.: od 190&nbsp;€ na dan</small></span>
             </figure>
             <div class="card-body">
@@ -238,7 +241,7 @@ Svi modeli su niskog profila, nudi panoramski pogled na nebo i sklopivi krovni k
 NORTHAUTOKAPP paket je jedinstven na tržištu!
 TESSORO kamper je vjerojatno najbolji low profile kamper u Europi.</p></div>
             </div>
-            <a class="card-btn" href="benimar-tessoro.html">SAZNAJ VIŠE</a>
+            <a class="card-btn" href="benimar-tessoro.html">SAZNAJ VIŠE<span class="sr-only"> – Benimar Tessoro</span></a>
           </article>
         </div>
       </div>
@@ -269,7 +272,7 @@ TESSORO kamper je vjerojatno najbolji low profile kamper u Europi.</p></div>
         </div>
         <div class="col-50 anim" data-anim="fadeInRight" data-delay="500">
           <figure class="hover-fig">
-            <img src="images/your-best-choice.jpg" alt="Vaš najbolji izbor">
+            <img decoding="async" loading="lazy" src="images/your-best-choice-w800.webp" srcset="images/your-best-choice-w400.webp 400w, images/your-best-choice-w800.webp 800w" sizes="(max-width: 767px) 558px, 810px" width="800" height="1131" alt="Vaš najbolji izbor">
             <figcaption>
               <h2>Vaš najbolji <span>izbor</span></h2>
               <p>CAMPER SAMOBOR</p>
@@ -290,16 +293,16 @@ TESSORO kamper je vjerojatno najbolji low profile kamper u Europi.</p></div>
       </div>
       <div class="row services-row">
         <div class="col-33 service">
-          <a href="http://www.sobe-samobor.biz/index.html"><img src="images/rooms-medved.jpg" alt="Sobe Medved" loading="lazy"></a>
-          <h5>Sobe Medved</h5>
+          <a href="http://www.sobe-samobor.biz/index.html"><img decoding="async" src="images/rooms-medved-w640.webp" srcset="images/rooms-medved-w400.webp 400w, images/rooms-medved-w640.webp 640w" sizes="(max-width: 767px) 90vw, 248px" width="640" height="480" alt="Sobe Medved" loading="lazy"></a>
+          <h3 class="service-title">Sobe Medved</h3>
         </div>
         <div class="col-33 service">
-          <a href="http://www.hostel-samobor.hr/"><img src="images/hostel-samobor.jpg" alt="Hostel Samobor" loading="lazy"></a>
-          <h5>Hostel Samobor</h5>
+          <a href="http://www.hostel-samobor.hr/"><img decoding="async" src="images/hostel-samobor-w800.webp" srcset="images/hostel-samobor-w400.webp 400w, images/hostel-samobor-w800.webp 800w" sizes="(max-width: 767px) 90vw, 248px" width="800" height="530" alt="Hostel Samobor" loading="lazy"></a>
+          <h3 class="service-title">Hostel Samobor</h3>
         </div>
         <div class="col-33 service">
-          <img src="images/ford-transit.jpg" alt="Ford Transit" loading="lazy">
-          <h5>Najam putničkih kombija</h5>
+          <img decoding="async" src="images/ford-transit-w800.webp" srcset="images/ford-transit-w400.webp 400w, images/ford-transit-w800.webp 800w" sizes="(max-width: 767px) 90vw, 248px" width="800" height="534" alt="Ford Transit" loading="lazy">
+          <h3 class="service-title">Najam putničkih kombija</h3>
         </div>
       </div>
     </div>
@@ -336,6 +339,6 @@ TESSORO kamper je vjerojatno najbolji low profile kamper u Europi.</p></div>
 
 <a href="#top" class="scroll-up" aria-label="Na vrh"><svg><use href="#ico-arrow-up"/></svg></a>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>

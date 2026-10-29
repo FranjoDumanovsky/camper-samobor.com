@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
   <title>RENT A MOTORHOME | AHORN | camper-samobor.com</title>
   <meta name="description" content="AHORN Canada AS – from 145 € per day. Full House - everyone finds their place here.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&family=Questrial&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=4">
+  <link rel="preload" as="image" href="../images/ahorn-as/1-mobile.webp" media="(max-width: 800px) and (orientation: portrait)" fetchpriority="high">
+  <link rel="preload" as="image" href="../images/ahorn-as/1.webp" media="not all and (max-width: 800px) and (orientation: portrait)" fetchpriority="high">
+  <style>.d-hero{background-image:url("../images/ahorn-as/1.webp")}@media (max-width: 800px) and (orientation: portrait){.d-hero{background-image:url("../images/ahorn-as/1-mobile.webp")}}</style>
+  <link rel="preload" href="../fonts/poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/poppins-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/poppins-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css?v=5">
 </head>
 <body class="no-js">
 
@@ -46,7 +50,7 @@
 <header class="site-header" id="top">
   <div class="header-inner">
     <div class="h-col h-logo anim" data-anim="fadeInDown">
-      <a href="../en/index.html" class="logo"><img src="../images/logo.png" width="300" height="139" alt="Camper Samobor"></a>
+      <a href="../en/index.html" class="logo"><img decoding="async" src="../images/logo-w200.webp" width="300" height="139" alt="Camper Samobor"></a>
     </div>
 
     <div class="h-col h-nav anim" data-anim="fadeInDown" data-delay="200">
@@ -103,7 +107,7 @@
 <main id="main" class="detail">
 
   <!-- ============ HERO ============ -->
-  <section class="d-hero" style="background-image:url('../images/ahorn-as/1.jpg')">
+  <section class="d-hero">
     <div class="overlay"></div>
     <div class="d-hero-bar">
       <div class="container row">
@@ -143,21 +147,21 @@
   <section class="d-gallery">
     <div class="container">
       <div class="gallery">
-        <a class="gallery-item" href="../images/ahorn-as/1.jpg" data-index="0"><img src="../images/ahorn-as/1-1024x683.jpg" alt="AHORN Canada AS – 1" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/2.jpg" data-index="1"><img src="../images/ahorn-as/2-1024x683.jpg" alt="AHORN Canada AS – 2" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/3.jpg" data-index="2"><img src="../images/ahorn-as/3-1024x683.jpg" alt="AHORN Canada AS – 3" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/4.jpg" data-index="3"><img src="../images/ahorn-as/4-1024x683.jpg" alt="AHORN Canada AS – 4" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/5.jpg" data-index="4"><img src="../images/ahorn-as/5-1024x546.jpg" alt="AHORN Canada AS – 5" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/6.jpg" data-index="5"><img src="../images/ahorn-as/6-1024x683.jpg" alt="AHORN Canada AS – 6" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/7.jpg" data-index="6"><img src="../images/ahorn-as/7-1024x683.jpg" alt="AHORN Canada AS – 7" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/8.jpg" data-index="7"><img src="../images/ahorn-as/8-1024x683.jpg" alt="AHORN Canada AS – 8" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/9.jpg" data-index="8"><img src="../images/ahorn-as/9-1024x683.jpg" alt="AHORN Canada AS – 9" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/10.jpg" data-index="9"><img src="../images/ahorn-as/10-1024x683.jpg" alt="AHORN Canada AS – 10" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/11.jpg" data-index="10"><img src="../images/ahorn-as/11-1024x683.jpg" alt="AHORN Canada AS – 11" loading="lazy"></a>
-        <a class="gallery-item" href="../images/ahorn-as/12.jpg" data-index="11"><img src="../images/ahorn-as/12-1024x683.jpg" alt="AHORN Canada AS – 12" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/1.webp" data-index="0"><img decoding="async" src="../images/ahorn-as/1-1024x683-w800.webp" srcset="../images/ahorn-as/1-1024x683-w400.webp 400w, ../images/ahorn-as/1-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 1" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/2.webp" data-index="1"><img decoding="async" src="../images/ahorn-as/2-1024x683-w800.webp" srcset="../images/ahorn-as/2-1024x683-w400.webp 400w, ../images/ahorn-as/2-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 2" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/3.webp" data-index="2"><img decoding="async" src="../images/ahorn-as/3-1024x683-w800.webp" srcset="../images/ahorn-as/3-1024x683-w400.webp 400w, ../images/ahorn-as/3-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 3" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/4.webp" data-index="3"><img decoding="async" src="../images/ahorn-as/4-1024x683-w800.webp" srcset="../images/ahorn-as/4-1024x683-w400.webp 400w, ../images/ahorn-as/4-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 4" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/5.webp" data-index="4"><img decoding="async" src="../images/ahorn-as/5-1024x546-w800.webp" srcset="../images/ahorn-as/5-1024x546-w400.webp 400w, ../images/ahorn-as/5-1024x546-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="427" alt="AHORN Canada AS – 5" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/6.webp" data-index="5"><img decoding="async" src="../images/ahorn-as/6-1024x683-w800.webp" srcset="../images/ahorn-as/6-1024x683-w400.webp 400w, ../images/ahorn-as/6-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 6" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/7.webp" data-index="6"><img decoding="async" src="../images/ahorn-as/7-1024x683-w800.webp" srcset="../images/ahorn-as/7-1024x683-w400.webp 400w, ../images/ahorn-as/7-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 7" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/8.webp" data-index="7"><img decoding="async" src="../images/ahorn-as/8-1024x683-w800.webp" srcset="../images/ahorn-as/8-1024x683-w400.webp 400w, ../images/ahorn-as/8-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 8" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/9.webp" data-index="8"><img decoding="async" src="../images/ahorn-as/9-1024x683-w800.webp" srcset="../images/ahorn-as/9-1024x683-w400.webp 400w, ../images/ahorn-as/9-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 9" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/10.webp" data-index="9"><img decoding="async" src="../images/ahorn-as/10-1024x683-w800.webp" srcset="../images/ahorn-as/10-1024x683-w400.webp 400w, ../images/ahorn-as/10-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 10" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/11.webp" data-index="10"><img decoding="async" src="../images/ahorn-as/11-1024x683-w800.webp" srcset="../images/ahorn-as/11-1024x683-w400.webp 400w, ../images/ahorn-as/11-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 11" loading="lazy"></a>
+        <a class="gallery-item" href="../images/ahorn-as/12.webp" data-index="11"><img decoding="async" src="../images/ahorn-as/12-1024x683-w800.webp" srcset="../images/ahorn-as/12-1024x683-w400.webp 400w, ../images/ahorn-as/12-1024x683-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="534" alt="AHORN Canada AS – 12" loading="lazy"></a>
       </div>
       <hr class="divider">
-      <img class="plan" src="../images/ahorn-as/Screenshot_2.jpg" alt="AHORN Canada AS – layout">
+      <img decoding="async" loading="lazy" class="plan" src="../images/ahorn-as/Screenshot_2-w663.webp" srcset="../images/ahorn-as/Screenshot_2-w400.webp 400w, ../images/ahorn-as/Screenshot_2-w663.webp 663w" sizes="(max-width: 767px) 95vw, 456px" width="663" height="493" alt="AHORN Canada AS – layout">
       <ul class="dims">
           <li><svg><use href="#ico-arrows-alt-h"/></svg><span>LENGTH : 747cm</span></li>
           <li><svg><use href="#ico-arrows-alt-v"/></svg><span>HEIGHT : 306 cm</span></li>
@@ -344,6 +348,6 @@
   <div class="lb-counter"></div>
 </div>
 
-<script src="../js/main.js"></script>
+<script src="../js/main.js?v=2"></script>
 </body>
 </html>

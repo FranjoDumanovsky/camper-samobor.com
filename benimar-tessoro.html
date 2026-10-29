@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
   <title>NAJAM KAMPERA | BENIMAR TESSORO | camper-samobor.com</title>
   <meta name="description" content="BENIMAR TESSORO 463 – od 190 € po danu. Luksuzan i ekonomičan kamper.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&family=Questrial&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="preload" as="image" href="images/benimar-tessoro/12-mobile.webp" media="(max-width: 800px) and (orientation: portrait)" fetchpriority="high">
+  <link rel="preload" as="image" href="images/benimar-tessoro/12.webp" media="not all and (max-width: 800px) and (orientation: portrait)" fetchpriority="high">
+  <style>.d-hero{background-image:url("images/benimar-tessoro/12.webp")}@media (max-width: 800px) and (orientation: portrait){.d-hero{background-image:url("images/benimar-tessoro/12-mobile.webp")}}</style>
+  <link rel="preload" href="fonts/poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body class="no-js">
 
@@ -46,7 +50,7 @@
 <header class="site-header" id="top">
   <div class="header-inner">
     <div class="h-col h-logo anim" data-anim="fadeInDown">
-      <a href="index.html" class="logo"><img src="images/logo.png" width="300" height="139" alt="Camper Samobor"></a>
+      <a href="index.html" class="logo"><img decoding="async" src="images/logo-w200.webp" width="300" height="139" alt="Camper Samobor"></a>
     </div>
 
     <div class="h-col h-nav anim" data-anim="fadeInDown" data-delay="200">
@@ -103,7 +107,7 @@
 <main id="main" class="detail">
 
   <!-- ============ HERO ============ -->
-  <section class="d-hero" style="background-image:url('images/benimar-tessoro/12.jpeg')">
+  <section class="d-hero">
     <div class="overlay"></div>
     <div class="d-hero-bar">
       <div class="container row">
@@ -144,21 +148,21 @@
   <section class="d-gallery">
     <div class="container">
       <div class="gallery">
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-1.jpeg" data-index="0"><img src="images/benimar-tessoro/BENIMAR-1-683x1024.jpeg" alt="BENIMAR TESSORO 463 – 1" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-2.jpeg" data-index="1"><img src="images/benimar-tessoro/BENIMAR-2-682x1024.jpeg" alt="BENIMAR TESSORO 463 – 2" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-3.jpeg" data-index="2"><img src="images/benimar-tessoro/BENIMAR-3-682x1024.jpeg" alt="BENIMAR TESSORO 463 – 3" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-4.jpeg" data-index="3"><img src="images/benimar-tessoro/BENIMAR-4-1024x682.jpeg" alt="BENIMAR TESSORO 463 – 4" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-5.jpeg" data-index="4"><img src="images/benimar-tessoro/BENIMAR-5-682x1024.jpeg" alt="BENIMAR TESSORO 463 – 5" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-6.jpeg" data-index="5"><img src="images/benimar-tessoro/BENIMAR-6-682x1024.jpeg" alt="BENIMAR TESSORO 463 – 6" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-7.jpeg" data-index="6"><img src="images/benimar-tessoro/BENIMAR-7-1024x891.jpeg" alt="BENIMAR TESSORO 463 – 7" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-8.jpeg" data-index="7"><img src="images/benimar-tessoro/BENIMAR-8-1024x682.jpeg" alt="BENIMAR TESSORO 463 – 8" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-9.jpeg" data-index="8"><img src="images/benimar-tessoro/BENIMAR-9-1024x682.jpeg" alt="BENIMAR TESSORO 463 – 9" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-10.jpeg" data-index="9"><img src="images/benimar-tessoro/BENIMAR-10-1024x682.jpeg" alt="BENIMAR TESSORO 463 – 10" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-11.jpeg" data-index="10"><img src="images/benimar-tessoro/BENIMAR-11-1024x682.jpeg" alt="BENIMAR TESSORO 463 – 11" loading="lazy"></a>
-        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-12.jpeg" data-index="11"><img src="images/benimar-tessoro/BENIMAR-12-1024x682.jpeg" alt="BENIMAR TESSORO 463 – 12" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-1.webp" data-index="0"><img decoding="async" src="images/benimar-tessoro/BENIMAR-1-683x1024-w683.webp" srcset="images/benimar-tessoro/BENIMAR-1-683x1024-w400.webp 400w, images/benimar-tessoro/BENIMAR-1-683x1024-w683.webp 683w" sizes="(max-width: 767px) 90vw, 273px" width="683" height="1024" alt="BENIMAR TESSORO 463 – 1" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-2.webp" data-index="1"><img decoding="async" src="images/benimar-tessoro/BENIMAR-2-682x1024-w682.webp" srcset="images/benimar-tessoro/BENIMAR-2-682x1024-w400.webp 400w, images/benimar-tessoro/BENIMAR-2-682x1024-w682.webp 682w" sizes="(max-width: 767px) 90vw, 273px" width="682" height="1024" alt="BENIMAR TESSORO 463 – 2" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-3.webp" data-index="2"><img decoding="async" src="images/benimar-tessoro/BENIMAR-3-682x1024-w682.webp" srcset="images/benimar-tessoro/BENIMAR-3-682x1024-w400.webp 400w, images/benimar-tessoro/BENIMAR-3-682x1024-w682.webp 682w" sizes="(max-width: 767px) 90vw, 273px" width="682" height="1024" alt="BENIMAR TESSORO 463 – 3" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-4.webp" data-index="3"><img decoding="async" src="images/benimar-tessoro/BENIMAR-4-1024x682-w800.webp" srcset="images/benimar-tessoro/BENIMAR-4-1024x682-w400.webp 400w, images/benimar-tessoro/BENIMAR-4-1024x682-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="533" alt="BENIMAR TESSORO 463 – 4" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-5.webp" data-index="4"><img decoding="async" src="images/benimar-tessoro/BENIMAR-5-682x1024-w682.webp" srcset="images/benimar-tessoro/BENIMAR-5-682x1024-w400.webp 400w, images/benimar-tessoro/BENIMAR-5-682x1024-w682.webp 682w" sizes="(max-width: 767px) 90vw, 273px" width="682" height="1024" alt="BENIMAR TESSORO 463 – 5" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-6.webp" data-index="5"><img decoding="async" src="images/benimar-tessoro/BENIMAR-6-682x1024-w682.webp" srcset="images/benimar-tessoro/BENIMAR-6-682x1024-w400.webp 400w, images/benimar-tessoro/BENIMAR-6-682x1024-w682.webp 682w" sizes="(max-width: 767px) 90vw, 273px" width="682" height="1024" alt="BENIMAR TESSORO 463 – 6" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-7.webp" data-index="6"><img decoding="async" src="images/benimar-tessoro/BENIMAR-7-1024x891-w800.webp" srcset="images/benimar-tessoro/BENIMAR-7-1024x891-w400.webp 400w, images/benimar-tessoro/BENIMAR-7-1024x891-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="696" alt="BENIMAR TESSORO 463 – 7" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-8.webp" data-index="7"><img decoding="async" src="images/benimar-tessoro/BENIMAR-8-1024x682-w800.webp" srcset="images/benimar-tessoro/BENIMAR-8-1024x682-w400.webp 400w, images/benimar-tessoro/BENIMAR-8-1024x682-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="533" alt="BENIMAR TESSORO 463 – 8" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-9.webp" data-index="8"><img decoding="async" src="images/benimar-tessoro/BENIMAR-9-1024x682-w800.webp" srcset="images/benimar-tessoro/BENIMAR-9-1024x682-w400.webp 400w, images/benimar-tessoro/BENIMAR-9-1024x682-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="533" alt="BENIMAR TESSORO 463 – 9" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-10.webp" data-index="9"><img decoding="async" src="images/benimar-tessoro/BENIMAR-10-1024x682-w800.webp" srcset="images/benimar-tessoro/BENIMAR-10-1024x682-w400.webp 400w, images/benimar-tessoro/BENIMAR-10-1024x682-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="533" alt="BENIMAR TESSORO 463 – 10" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-11.webp" data-index="10"><img decoding="async" src="images/benimar-tessoro/BENIMAR-11-1024x682-w800.webp" srcset="images/benimar-tessoro/BENIMAR-11-1024x682-w400.webp 400w, images/benimar-tessoro/BENIMAR-11-1024x682-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="533" alt="BENIMAR TESSORO 463 – 11" loading="lazy"></a>
+        <a class="gallery-item" href="images/benimar-tessoro/BENIMAR-12.webp" data-index="11"><img decoding="async" src="images/benimar-tessoro/BENIMAR-12-1024x682-w800.webp" srcset="images/benimar-tessoro/BENIMAR-12-1024x682-w400.webp 400w, images/benimar-tessoro/BENIMAR-12-1024x682-w800.webp 800w" sizes="(max-width: 767px) 90vw, 273px" width="800" height="533" alt="BENIMAR TESSORO 463 – 12" loading="lazy"></a>
       </div>
       <hr class="divider">
-      <img class="plan" src="images/benimar-tessoro/dis-768x283.jpg" alt="BENIMAR TESSORO 463 – layout">
+      <img decoding="async" loading="lazy" class="plan" src="images/benimar-tessoro/dis-768x283-w768.webp" srcset="images/benimar-tessoro/dis-768x283-w400.webp 400w, images/benimar-tessoro/dis-768x283-w768.webp 768w" sizes="(max-width: 767px) 95vw, 456px" width="768" height="283" alt="BENIMAR TESSORO 463 – layout">
       <ul class="dims">
           <li><svg><use href="#ico-arrows-alt-h"/></svg><span>DUŽINA : 743 cm</span></li>
           <li><svg><use href="#ico-arrows-alt-v"/></svg><span>VISINA : 289 cm</span></li>
@@ -334,6 +338,6 @@
   <div class="lb-counter"></div>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>

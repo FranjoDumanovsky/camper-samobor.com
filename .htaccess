@@ -60,19 +60,25 @@ DirectoryIndex index.html
   </IfModule>
 </FilesMatch>
 
+AddType font/woff2 .woff2
+
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript image/svg+xml
 </IfModule>
 
 <IfModule mod_expires.c>
   ExpiresActive On
-  # Images/fonts are content-stable; HTML must stay short so edits go live.
+  # Images/fonts are content-stable; CSS/JS are linked with ?v=N and bumped on
+  # every change, so they can be cached for a year too. HTML must stay short so
+  # edits go live.
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
   ExpiresByType text/html "access plus 10 minutes"
 </IfModule>
 

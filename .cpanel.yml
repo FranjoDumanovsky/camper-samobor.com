@@ -12,4 +12,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/camper/public_html/
-    - /bin/cp -R .htaccess *.html css js images en $DEPLOYPATH
+    - /bin/cp -R .htaccess *.html css js fonts images en $DEPLOYPATH
